@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="./assets/Icon.png" />
+        <title>The Wild Colonial Tavern</title>
+        <!-- import javascript variables and functions -->
+        <!-- import CSS styles -->
+        <link rel="stylesheet" href="styles.css" /> 
+        <link rel="stylesheet" href="https://use.typekit.net/aid2dxw.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- page content goes into <body> -->
+    <body>
+        <div id="main-container"> 
+            <h1>
+                CSCI 1300 : Responsive Redesign
+            </h1>
+
+            <h2>
+                Overview
+            </h2>
+
+            <p class="main-content">
+                The goal of this assignment is to practice the 
+                workflow of redesigning a simple website. 
+                Here I analyze and identify flaws in an existing interface, 
+                create low-fidelity and high-fidelity prototypes for 
+                various screen sizes, and build a responsive website based 
+                on those prototypes.
+            </p>
+
+            <h2>
+                Identifying Usability Problems
+            </h2>
+
+            <p class="main-content">
+                The website I have chosen to redesign is The Wild Colonial Tavern.<br>
+                <a href="http://www.wildcolonial.com/" style="color: #F6FBFD;" target="_blank">Click here to see the website</a>
+                <br><br>
+                Since the Wild Colonial Tavern is one of my favorite bars in 
+                Providence but also has a highly unresponsive and badly 
+                designed website, I chose that page as my example. 
+                The image is simply chopped/overflows on resize, and is arbitrarily 
+                positioned at the 
+                center because it does not adapt to the size of the screen. 
+                You may easily overlook the various menu items because they are 
+                so tiny and have such a weak contrast to the backdrop color. 
+                There is a lot of room for redesigning this page.
+            </p>
+
+            <div class="screenshot">
+                <img src="./assets/screenshot.png" alt="The Wild Colonial Pub website screenshot" class="wct-image" />                                        
+            </div>
+
+            <h2>
+                Problems
+            </h2>
+
+            <div>
+                <ul class="problems_list">
+                    <li>Homepage badly designed with a huge image at the center but very small and low contrast menu items that a user could miss</li>
+                    <li>Image does not scale with screen size and instead overflows</li>
+                    <li>Bad or insufficient use of margins, padding</li>
+                    <li>Bad naming and usage of menu items (One of them just says I-phone and it located before the Home menu item)</li>
+                    <li>Huge gap above the photo and below the contact information for no reason</li>
+                    <li>No icon next to tab title</li>
+                    <li>Website is insecure (http not https)</li>
+                    <li>Lighthouse analysis fails indicating that certain key features or elements are missing from the website code</li>
+                    <li>Learnability and memorability is low as the menu items are not standard and are verbose</li>
+                    <li>Footer could be implemented to house contact information</li>
+                    <li>Navbar could be implemented to better display the menu items</li>
+                </ul>
+            </div>
+
+            <h2>
+                Accessibility
+            </h2>
+
+            <div>
+                <ul class="problems_list">
+                    <li>Language missing or Invalid</li>
+                    <li>No heading structure</li>
+                    <li>No page regions / ARIA markers</li>                    
+                </ul>
+            </div>
+
+            <p class="main-content">
+                <br><br>
+                The three problems mentioned above were found by the WAVE evaluation 
+                tool. I concur with their conclusions. Due to "lingo" or informal 
+                terminology used in menu items, some people, especially those who 
+                come from outside of this region, may not comprehend it. 
+                The absence of headings on the website compromises its usability 
+                and readability. Additionally, the absence of region or ARIA 
+                indicators makes it impossible for screen readers to understand 
+                what is happening on the website, excluding users with visual 
+                impairments.
+                Additionally, although though WAVE did not notice the contrast 
+                problems, I think they are present on the website and need to be 
+                manually checked.
+            </p>
+
+            <h2>
+                Low-Fidelity Prototypes
+            </h2>
+
+            <p class="main-content">
+                The low-fidelity prototypes were created using Balsamiq. 
+                I created three different prototypes for three different screen 
+                sizes: mobile, tablet, and desktop. 
+            </p>
+
+            <div class="screenshot">
+                <img src="./assets/Laptop.png" alt="Low-fidelity prototype laptop" class="wct-image" />
+            </div>
+            <br>
+            <div class="screenshot">
+                <img src="./assets/Tablet.png" alt="Low-fidelity prototype tablet" class="wct-image" />
+            </div>
+            <br>
+            <div class="screenshot">
+                <img src="./assets/Phone.png" alt="Low-fidelity prototype phone" class="wct-image" />
+            </div>
+
+            <h2>
+                Visual Design Style Guide
+            </h2>
+
+            <p class="main-content">
+                The visual design style guide was created on Figma. 
+                It helped in visualizing the design of the website and decide on 
+                colors and components
+            </p>
+            <div class="screenshot">
+                <img src="./assets/style-guide.png" alt="Style guide created on Figma" class="wct-image" />
+            </div>
+
+            <h2>
+                High-Fidelity Prototypes
+            </h2>
+
+            <p class="main-content">
+                The high-fidelity prototypes were created using Figma. 
+                I created three different prototypes for three different screen 
+                sizes: mobile, tablet, and desktop.
+            </p>
+
+            <br>
+                <hr style="width:50%;text-align:left;margin:0 auto">
+            <h3>
+                Laptop
+            </h3>
+            <div class="screenshot-hf">
+                <img src="./assets/hf-laptop.png" alt="Low-fidelity prototype laptop" class="wct-image" />
+            </div>
+            <br>
+                <hr style="width:50%;text-align:left;margin:0 auto">
+            <h3>
+                Tablet
+            </h3>
+            <div class="screenshot-hf2">
+                <img src="./assets/hf-tablet.png" alt="Low-fidelity prototype tablet" class="wct-image" />
+            </div>
+            <br>
+                <hr style="width:50%;text-align:left;margin:0 auto">
+            <h3>
+                Phone
+            </h3>
+            <div class="screenshot-hf3">
+                <img src="./assets/hf-phone.png" alt="Low-fidelity prototype phone" class="wct-image" />
+            </div>
+            <br>
+                <hr style="width:50%;text-align:left;margin:0 auto">
+            <br>
+            
+            <h2>
+                Responsive Redesign
+            </h2>
+
+            <p class="main-content">
+                The responsive redesign was created using HTML, CSS, and JavaScript. 
+                <br>
+                Click on the first button to see the website in its original form.
+                <br>
+                Click on the second button to see the website in its redesigned form.
+            </p>
+
+            <div class="website-buttons">
+                <a href="http://www.wildcolonial.com/">
+                    <button class="button">Original Website</button>
+                </a>    
+                <a href="./reponsive.html">
+                    <button class="button">Responsive Website</button>
+                </a>
+            </div>
+        </div>                
+    </body>
+</html>

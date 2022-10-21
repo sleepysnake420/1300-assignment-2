@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="./assets/Icon.png" />
+        <title>The Wild Colonial Tavern</title>
+        <!-- import javascript variables and functions -->
+        <!-- import CSS styles -->
+        <link rel="stylesheet" href="styles.css" /> 
+        <link rel="stylesheet" href="https://use.typekit.net/aid2dxw.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- page content goes into <body> -->
+    <body>
+        <div id="container">     
+            <nav class="navbar" id="topNav">                
+                <div class="navbar_logo">
+                    <img src="./assets/Icon.png" alt="The Wild Colonial Tavern Logo" />
+                </div>
+                <ul class="navbar_list no-bullets">
+                    <li style="text-decoration: underline;">Home</li>
+                    <li>Events</li>
+                    <li>Menus</li>
+                    <li>Bookings</li>
+                    <li>Pub Quiz</li>
+                </ul>    
+                <div class="navbar_hamburger" >
+                    <img src="./assets/menu.png" alt="Hamburger menu" />
+                </div>
+            </nav>
+
+            <div class="image-div">
+                <img src="./assets/wct.png" alt="The Wild Colonial Pub image with awards won" class="wct-image" />                                        
+            </div>
+            
+            <div class="image-div-arrow" onclick="handleArrowClick()">
+                <img src="./assets/arrow.png" alt="Indication to scroll down" class="arrow-image" />                                        
+            </div>
+            <script type="text/javascript">
+                function handleArrowClick() {
+                    console.log("Arrow clicked");
+                    let pageHeight = window.innerHeight;
+                    window.scrollBy(0, pageHeight);
+                }
+            </script>
+
+            <h1 class="about-us">
+                About Us
+            </h1>
+
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <footer class="footer">
+                <ul class="footer_list no-bullets">
+                    <li>The Wild Colonial Tavern, 250 South Water Street Providence RI 02903 </li>
+                    <li>(401) 621-5644</li>
+                    <li>Mon-Thu: 4pm to 1am | Fri: 4pm to 2am | Sat: 5pm to 2am | Sun: 5pm to 1am</li>
+                </ul>
+            </footer>
+        </div>                
+    </body>
+</html>
